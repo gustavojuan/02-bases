@@ -33,4 +33,16 @@ export class HeroComponent {
   }
 
 
+  resetForm():void {
+
+    this.name = 'ironman';
+    this.age = 45;
+
+
+    /*si nos saltamos el ciclo podemos liarla*/
+    // document.querySelectorAll('h1').forEach((element)=>{
+    //   element.innerHTML = '<h1>Desde Angular</h1>';
+    // })
+  }
+
 }
