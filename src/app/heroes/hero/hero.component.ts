@@ -8,6 +8,18 @@ import { Component } from '@angular/core';
 
 
 export class HeroComponent {
-  public name:string = 'ironman';
-  public age:number = 45;
+  public name: string = 'ironman';
+  public age: number = 45;
+
+
+  //Getters metodos que aparentan ser propiedad
+  get capitalizedName(): string {
+    return this.name.toUpperCase();
+  }
+
+  public  getHeroDescription(): string {
+    return `${this.name} - ${this.age}`;
+  }
+
+
 }
