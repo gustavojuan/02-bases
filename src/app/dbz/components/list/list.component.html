@@ -10,11 +10,13 @@
     let isOdd = odd;"
 
     class="list-group-item"
+
     [ngClass]="{
       'list-group-item-success':isFirst,
       'list-group-item-warning':isLast,
       'list-group-item-info':isOdd
     }"
+
     >
 
     <span class="text-primary">{{i + 1}}.</span>
