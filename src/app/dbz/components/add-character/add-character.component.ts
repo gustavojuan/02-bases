@@ -26,9 +26,6 @@ export class AddCharacterComponent {
 
   onChangeCharacter():void {
 
-
-
-
     if (this.character.name.length === 0) return;
     this.onNewCharacter.emit(this.character);
 
